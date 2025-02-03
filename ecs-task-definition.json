@@ -1,0 +1,22 @@
+{
+    "family": "html5up-task",
+    "networkMode": "bridge",
+    "requiresCompatibilities": [
+      "EC2"
+    ],
+    "containerDefinitions": [
+      {
+        "name": "html5up",
+        "image": "170809458842.dkr.ecr.us-east-1.amazonaws.com/html5up:latest",
+        "portMappings": [
+          {
+            "containerPort": 80,
+            "hostPort": 80,
+            "protocol": "tcp"
+          }
+        ],
+        "memoryReservation": 128,
+        "essential": true
+      }
+    ]
+  }
